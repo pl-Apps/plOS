@@ -1,8 +1,6 @@
-commitn=$(cat private/commit.txt)
-let commitn=$commitn+1
-echo $commitn > private/commit.txt
-git init 
+git init
 git add .
-git commit -m "Commit number: $commitn"
+git commit -m "New commit"
 git remote add origin https://github.com/pl-Apps/plOS.git
-echo Commit number: $commitn
+git push -u origin master
+git push origin master
