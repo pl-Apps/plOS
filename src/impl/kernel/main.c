@@ -1,4 +1,5 @@
 #include "print.h"
+#include <iostream>
 
 void kernel_main() {
     print_clear();
@@ -26,7 +27,7 @@ void plcli()
 {
     print_clear();
     print_str("==============[ PL-CLI ]==============\n\n");
-    const cli = "dwadw";
+    cin<<cli;
     if (cli == "clear" || cli == "cls")
     {
         print_clear();
