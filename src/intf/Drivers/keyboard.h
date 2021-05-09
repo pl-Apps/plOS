@@ -1,4 +1,3 @@
-#pragma once
 #include <stdint.h>
 #include "x86/idt.h"
 #include "display.h"
@@ -7,9 +6,6 @@
 #include "mutex.h"
 #include "memory.h"
 
-MODULE("KBD");
-
-void keyboard_irq();
 
 uint8_t lastkey = 0;
 uint8_t *keycache = 0;
