@@ -10,12 +10,30 @@ void kernel_main() {
     print_str("3) Shutdown Options\n");
 }
 
-void videoSettings()
+void videoSettings() 
 {
-    
+    print_clear();
+    print_str("==============[ Video Settings ]==============\n\n");
 }
 
 void ShutdownOptions()
 {
+    print_clear();
+    print_str("==============[ Shutdown Options ]==============\n\n");
+}
 
+void plcli()
+{
+    print_clear();
+    print_str("==============[ PL-CLI ]==============\n\n");
+    const cli = "dwadw";
+    if (cli == "clear" || cli == "cls")
+    {
+        print_clear();
+    }
+    else 
+    {
+        print_set_color(PRINT_COLOR_RED, PRINT_COLOR_BLACK);
+        print_str("Unknow command, type \"help\"");
+    }
 }
