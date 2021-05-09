@@ -25,6 +25,7 @@
 #include "elf.h"
 #include "pci.h"
 
+char* current_directory = "/root/";
 char* cli = NULL;
 const int true = 1 == 1;
 const int false = 2 == 1;
@@ -54,11 +55,11 @@ void ShutdownOptions()
     print_set_color(PRINT_COLOR_YELLOW, PRINT_COLOR_BLACK);
     print_str("==============[ Shutdown Options ]==============\n\n");
     print_set_color(PRINT_COLOR_RED, PRINT_COLOR_BLACK);
-    print_str("[1] Shutdown\n"); //color: red
+    print_str("1) Shutdown\n");
     print_set_color(PRINT_COLOR_YELLOW, PRINT_COLOR_BLACK);
-    print_str("[2] Reboot\n"); //color: yellow
+    print_str("2) Reboot\n");
     print_set_color(PRINT_COLOR_GREEN, PRINT_COLOR_BLACK);
-    print_str("[3] Back\n"); //color: green
+    print_str("3) Back\n");
 }
 
 void plcli()
@@ -68,14 +69,31 @@ void plcli()
     print_str("==============[ PL-CLI ]==============\n\n");
     keyboard_get_key();
 
-    /*
     while(true)
     {
         print_str("/root/@plOS>");
-        
+        const cli = "credits";
         if (cli == "clear" || cli == "cls")
         {
             print_clear();
+        }
+        else if (cli == "nl")
+        {
+            print_str("\n\n");
+        }
+        else if (cli == "credits" )
+        {
+/*
+                                              CREDITS:
+ _____________________________________________________________________________________
+|Name:        |           GitHub:                 |           Twitter:                |
+|Peppo        | https://github.com/Peppooo        |                                   |
+|JProgrammer  | https://github.com/JProgrammer-it | https://twitter.com/JProgrammerIt |
+
+*/
+            print_set_color(PRINT_COLOR_YELLOW, PRINT_COLOR_BLACK);
+            print_str("\nProgrammers: Peppo, JProgrammer\n");
+            print_set_color(PRINT_COLOR_GREEN, PRINT_COLOR_BLACK);
         }
         else if (cli == NULL)
         {
@@ -91,5 +109,4 @@ void plcli()
             print_str("\"\n");
         }
     }
-    */
 }

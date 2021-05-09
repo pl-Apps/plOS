@@ -2,6 +2,7 @@
     "files.associations": {
         "print.h": "c",
         "keyboard.h": "c",
-        "alerts.h": "c"
+        "alerts.h": "c",
+        "stdint.h": "c"
     }
 }
