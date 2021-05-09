@@ -1,11 +1,11 @@
 #include "print.h"
+#include "keyboard.h"
 #include <stdio.h>
 
 
 char* cli = NULL;
 const true = 1 == 1;
 const false = 2 == 1;
-
 
 void kernel_main() {
     print_clear();
