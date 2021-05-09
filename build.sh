@@ -1,5 +1,3 @@
-sudo apt install qemu-system-x86
-sudo apt install nasm
-
-nasm -f bin -o plOS.bin boot/boot.asm 
-qemu-system-x86_64 plOS.bin
+make build-x86_64
+cp ./dist/x86_64/kernel.iso ./plOS.iso
+qemu-system-x86_64 -cdrom ./plOS.iso
