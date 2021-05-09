@@ -3,9 +3,13 @@
 #include "display.h"
 #include "hal.h"
 #include "tasking.h"
+#include "keyboard.h"
 #include "mutex.h"
 #include "memory.h"
 
+MODULE("KBD");
+
+void keyboard_irq();
 
 uint8_t lastkey = 0;
 uint8_t *keycache = 0;

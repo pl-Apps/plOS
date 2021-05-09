@@ -1,5 +1,5 @@
 global long_mode_start
-extern plcli
+extern kernel_main
 
 section .text
 bits 64
@@ -13,5 +13,5 @@ long_mode_start:
     mov gs, ax
     
     ; start kernel_main | plOS\src\impl\kernel\main.c
-	call plcli
+	call kernel_main
     hlt
