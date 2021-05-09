@@ -1,4 +1,4 @@
-/** @author Levente Kurusa <levex@linux.com> **/
+#pragma once
 #include <stdint.h>
 #include "x86/idt.h"
 #include "display.h"

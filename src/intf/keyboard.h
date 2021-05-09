@@ -1,7 +1,6 @@
-/** @author Levente Kurusa <levex@linux.com> **/
-#ifndef __KEYBOARD_H_
-#define __KEYBOARD_H_
+#pragma once
 
+#ifndef __KEYBOARD_H_
 #include <stdint.h>
 
 extern void keyboard_init();
