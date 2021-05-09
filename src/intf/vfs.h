@@ -1,4 +1,3 @@
-/** @author Levente Kurusa <levex@linux.com> **/
 #ifndef __VFS_H_
 #define __VFS_H_
 

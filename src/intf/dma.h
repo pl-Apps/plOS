@@ -1,4 +1,3 @@
-/** @author Levente Kurusa <levex@linux.com> **/
 #ifndef __DMA_H_
 #define __DMA_H_
 #include <stdint.h>

@@ -1,4 +1,3 @@
-/** @author Levente Kurusa <levex@linux.com> **/
 #ifndef __TASKING_H_
 #define __TASKING_H_
 

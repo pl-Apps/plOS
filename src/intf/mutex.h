@@ -1,4 +1,3 @@
-/** @author Levente Kurusa <levex@linux.com> **/
 #ifndef __MUTEX_H_
 #define __MUTEX_H_
 

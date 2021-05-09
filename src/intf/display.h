@@ -1,4 +1,3 @@
-/** @author Levente Kurusa <levex@linux.com> **/
 #ifndef __DISPLAY_H_
 #define __DISPLAY_H_
 #include "string.h"

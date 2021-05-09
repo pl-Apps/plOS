@@ -1,4 +1,3 @@
-/** @author Levente Kurusa <levex@linux.com> **/
 #ifndef __PCI_H_
 #define __PCI_H_
 #include <stdint.h>

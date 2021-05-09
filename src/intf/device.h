@@ -1,4 +1,3 @@
-/** @author Levente Kurusa <levex@linux.com> **/
 #ifndef __DEVICE_H_
 #define __DEVICE_H_
 
