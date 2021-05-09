@@ -1,5 +1,11 @@
 #include "print.h"
-#include <iostream>
+#include <stdio.h>
+
+
+char* cli = NULL;
+const true = 1 == 1;
+const false = 2 == 1;
+
 
 void kernel_main() {
     print_clear();
@@ -26,15 +32,29 @@ void ShutdownOptions()
 void plcli()
 {
     print_clear();
+    print_set_color(PRINT_COLOR_WHITE, PRINT_COLOR_BLACK);
     print_str("==============[ PL-CLI ]==============\n\n");
-    cin<<cli;
-    if (cli == "clear" || cli == "cls")
+    //scanf("%d", &cli);
+    while(true)
     {
-        print_clear();
-    }
-    else 
-    {
-        print_set_color(PRINT_COLOR_RED, PRINT_COLOR_BLACK);
-        print_str("Unknow command, type \"help\"");
+        print_str("/root/@plOS>");
+        //input da mettere qui
+        if (cli == "clear" || cli == "cls")
+        {
+            print_clear();
+        }
+        else if (cli == NULL)
+        {
+            continue;
+        }
+        else 
+        {
+            print_set_color(PRINT_COLOR_RED, PRINT_COLOR_BLACK);
+            print_str("\n[!]");
+            print_set_color(PRINT_COLOR_YELLOW, PRINT_COLOR_BLACK);
+            print_str(" Unknow command \" ");
+            print_str(cli);
+            print_str("\"\n");
+        }
     }
 }
