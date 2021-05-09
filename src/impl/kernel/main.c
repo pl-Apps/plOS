@@ -1,5 +1,5 @@
 #include "print.h"
-
+#include "Drivers/keyboard.h"
 
 char* cli = NULL;
 const int true = 1 == 1;
@@ -7,6 +7,7 @@ const int false = 2 == 1;
 
 void kernel_main() {
     print_clear();
+    
     print_set_color(PRINT_COLOR_RED, PRINT_COLOR_BLACK);
     print_str("plOS\n\n");
     print_set_color(PRINT_COLOR_WHITE, PRINT_COLOR_BLACK);
@@ -33,12 +34,11 @@ void plcli()
     print_set_color(PRINT_COLOR_WHITE, PRINT_COLOR_BLACK);
     print_str("==============[ PL-CLI ]==============\n\n");
     keyboard_get_key();
-
-    //scanf("%d", &cli);
+    /*
     while(true)
     {
         print_str("/root/@plOS>");
-        //TODO: kernel input
+        
         if (cli == "clear" || cli == "cls")
         {
             print_clear();
@@ -57,4 +57,5 @@ void plcli()
             print_str("\"\n");
         }
     }
+    */
 }
