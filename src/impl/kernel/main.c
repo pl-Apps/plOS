@@ -89,12 +89,12 @@ void plcli()
             print_set_color(PRINT_COLOR_YELLOW, PRINT_COLOR_BLACK);
             print_str("\n                                              CREDITS:\n");
             print_str(" _____________________________________________________________________________________\n");
-            print_str("|                                                                                     |\n");
-            print_str("|Name:        |           GitHub:                 |           Twitter:                |\n");
-            print_str("|Peppo        | https://github.com/Peppooo        |                                   |\n");
-            print_str("|JProgrammer  | https://github.com/JProgrammer-it | https://twitter.com/JProgrammerIt |\n\n");
-            print_str("|                      Discord: https://discord.gg/jZtZZSFrbU                         |\n");
-            print_str("|_____________________________________________________________________________________|");
+            print_str("|                                                                                      |\n");
+            print_str("| Name:        |           GitHub:                 |           Twitter:                |\n");
+            print_str("| Peppo        | https://github.com/Peppooo        |                                   |\n");
+            print_str("| JProgrammer  | https://github.com/JProgrammer-it | https://twitter.com/JProgrammerIt |\n\n");
+            print_str("|                       Discord: https://discord.gg/jZtZZSFrbU                         |\n");
+            print_str("|________________ _____________________________________________________________________|");
             print_set_color(PRINT_COLOR_GREEN, PRINT_COLOR_BLACK);
         }
         else if (cli == NULL)
