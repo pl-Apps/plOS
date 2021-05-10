@@ -3,6 +3,7 @@
         "print.h": "c",
         "keyboard.h": "c",
         "alerts.h": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "gdt.h": "c"
     }
 }

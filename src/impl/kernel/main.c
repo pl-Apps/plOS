@@ -1,5 +1,8 @@
 #include "print.h"
 #include "alerts.h"
+
+//#include "Drivers/keyboard.c"
+/*
 #include "string.h"
 #include "memory.h"
 #include "display.h"
@@ -24,7 +27,7 @@
 #include "module.h"
 #include "elf.h"
 #include "pci.h"
-
+*/
 char* current_directory = "/root/";
 char* cli = NULL;
 const int true = 1 == 1;
@@ -67,10 +70,10 @@ void plcli()
     print_clear();
     print_set_color(PRINT_COLOR_GREEN, PRINT_COLOR_BLACK);
     print_str("==============[ PL-CLI ]==============\n\n");
-    keyboard_get_key();
+    //keyboard_get_key();
 
-    while(true)
-    {
+    //while(true)
+    //{
         print_str("/root/@plOS>");
         const cli = "credits";
         if (cli == "clear" || cli == "cls")
@@ -83,21 +86,20 @@ void plcli()
         }
         else if (cli == "credits" )
         {
-/*
-                                              CREDITS:
- _____________________________________________________________________________________
-|Name:        |           GitHub:                 |           Twitter:                |
-|Peppo        | https://github.com/Peppooo        |                                   |
-|JProgrammer  | https://github.com/JProgrammer-it | https://twitter.com/JProgrammerIt |
-
-*/
             print_set_color(PRINT_COLOR_YELLOW, PRINT_COLOR_BLACK);
-            print_str("\nProgrammers: Peppo, JProgrammer\n");
+            print_str("\n                                              CREDITS:\n");
+            print_str(" _____________________________________________________________________________________\n");
+            print_str("|                                                                                     |\n");
+            print_str("|Name:        |           GitHub:                 |           Twitter:                |\n");
+            print_str("|Peppo        | https://github.com/Peppooo        |                                   |\n");
+            print_str("|JProgrammer  | https://github.com/JProgrammer-it | https://twitter.com/JProgrammerIt |\n\n");
+            print_str("|                      Discord: https://discord.gg/jZtZZSFrbU                         |\n");
+            print_str("|_____________________________________________________________________________________|");
             print_set_color(PRINT_COLOR_GREEN, PRINT_COLOR_BLACK);
         }
         else if (cli == NULL)
         {
-            continue;
+            //continue;
         }
         else 
         {
@@ -108,5 +110,14 @@ void plcli()
             print_str(cli);
             print_str("\"\n");
         }
-    }
+    //}
+}
+
+void test()
+{
+    print_clear();
+    success(" ciao");
+    error(" Ciao");
+    warining(" ciao");
+    loading(" ciao");
 }
