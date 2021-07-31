@@ -6,9 +6,12 @@
 
 + Install ubuntu 18.04 (WSL)
   + Install g++
-+ Run exec.bat
+    + Install lib iw
+      + Run exec.bat 
 
 ### Linux 
 
 + Install qemu-system-x86
-    + Run 
+  + Install g++ 
+    + Install lib iw
+      + Run exec.sh
